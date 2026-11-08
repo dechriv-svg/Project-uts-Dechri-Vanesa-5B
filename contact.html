@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - F1 Trackside</title>
+    <link rel="stylesheet" href="projectuts.css">
+    <link rel="icon" href="images f1/Download Formula 1 Logo Vector in _EPS, .SVG," type="image/jpeg">
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <h1>F1 TRACKSIDE</h1>
+        <p>Feel The Speed, Know The Race</p>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Kontak -->
+    <section class="contact">
+    <h2>HUBUNGI KAMI</h2>
+
+    <p>Ingin berbagi pendapat, memberikan saran, atau memiliki pertanyaan seputar dunia Formula 1? 
+        Kami terbuka untuk mendengar pesan dari kamu. Jangan ragu untuk menghubungi F1 Trackside melalui kontak berikut.</p>
+
+    <div class="contact-info">
+        <h3>Informasi Kontak</h3>
+        <p>Email:vavan6516@gmail.com</p>
+        <p>Website Resmi Formula 1: www.formula1.com</p>
+
+        <p>Mari tetap terhubung dan ikuti keseruan dunia Formula 1 bersama F1 Trackside!</p>
+    </div>
+</section>
+
+<!-- Formulir Pesan -->
+<section class="contact-form">
+<h2>KIRIM PESAN</h2>
+
+<form id="contactForm">
+    <label for="nama">Nama</label>
+    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+
+    <label for="tim">Tim Favorit</label>
+    <input type="text" id="Tim" name="Tim" placeholder="Masukkan nama Tim Favoritmu" required>
+
+    <label for="pesan">Pesan</label>
+    <textarea id="pesan" name="pesan" placeholder="Tulis pesan kamu" required></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+<h2>F1 TRACKSIDE</h2>
+<p>Feel the Speed, Know the Race.</p>
+
+<p>Designed by F1 Trackside</p>
+<p>&copy; 2026 F1 Trackside. All Rights Reserved.</p>
+</footer>
+
+<script>
+    const contactForm = document.getElementById("contactForm");
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value;
+
+        alert("Terima kasih, " + nama +
+        "! Pesan kamu berhasil dikirim.");
+
+        contactForm.reset();
+    });
+</script>
+
+</body>
+</html>

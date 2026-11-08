@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - F1 Trackside</title>
+    <link rel="stylesheet" href="projectuts.css">
+    <link rel="icon" href="images f1/Download Formula 1 Logo Vector in _EPS, .SVG," type="image/jpeg">
+
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <h1>F1 TRACKSIDE</h1>
+        <p>Feel The Speed, Know The Race</p>
+    </header>
+
+    <!--Navigation-->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Registration section-->
+    <section class="registration">
+        <h2>JOIN F1 TRACKSIDE</h2>
+        <P>Daftarkan diri kamu dan jadilah bagian dari komunitas Formula 1.
+        </P>
+
+    <form id="registrationForm">
+    <label for="name">Nama Lengkap</label>
+    <input type="text" id="name" name="name" placeholder="Masukkan Nama Lengkap" required>
+
+    <label for="email">Alamat Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan Alamat email" required>
+
+    <label for="phone">Nomor Telepon
+
+    </label>
+    <input type="text" id="phone" name="phone" placeholder="Masukkan Nomor Telepon" required>
+
+    <label for="country">Negara</label>
+    <input type="text" id="country" name="country" placeholder="Masukkan asal kamu" required>
+
+    <button type="submit">Daftar Sekarang</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h2>F1 TRACKSIDE</h2>
+    <p>Feel the Speed, Know the Race.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <p>Designed by F1 Trackside</p>
+    <p>&copy; 2026 F1 Trackside. All Rights Reserved.</p>
+</footer>
+
+<script>
+    const form = document.getElementById("registrationForm");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nama = document.getElementById("name").value;
+
+        alert("Selamat datang, " + nama +
+        "! Pendaftaran kamu berhasil.");
+
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
